@@ -1,5 +1,5 @@
-
 #include "holberton.h"
+#include <stdio.h>
 
 /**
  * main - check the code for Holberton School students.
@@ -8,6 +8,11 @@
  */
 int main(void)
 {
-    _puts_recursion("Betty Holberton");
+    char *s = "hello, world";
+    char *f = "world";
+    char *t;
+
+    t = _strstr(s, f);
+    printf("%s\n", t);
     return (0);
 }

@@ -8,9 +8,15 @@
  */
 int main(void)
 {
-    int n;
+    char *s = "hello";
+    char *f;
 
-    n = _strlen_recursion("Corbin Coleman");
-    printf("%d\n", n);
+    f = _strchr(s, 'l');
+
+    if (f != NULL)
+    {
+        printf("%s\n", f);
+    }
     return (0);
 }
+
